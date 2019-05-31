@@ -33,4 +33,5 @@ for i in *.ab1;
   done
 rm tmp.lst
 
-for e in *.ab1; do mv $e ${e%_*}".ab1"; done
+for e in *.ab1; do mv "$e" ${e%_*}.ab1; 
+done
